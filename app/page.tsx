@@ -3,40 +3,6 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      
-      <section style={{ padding: "40px" }}>
-     <h2>Espaces populaires</h2>
-
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-      gap: "20px",
-      marginTop: "20px",
-    }}
-  >
-    <EventCard
-      title="Salle de mariage"
-      city="Paris"
-      price={500}
-      image="https://images.unsplash.com/photo-1529634892075-9f7d1e63d4b5"
-    />
-
-    <EventCard
-      title="Loft événementiel"
-      city="Lyon"
-      price={300}
-      image="https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
-    />
-
-    <EventCard
-      title="Jardin extérieur"
-      city="Marseille"
-      price={200}
-      image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
-    />
-  </div>
-</section>
       <section
         style={{
           height: "90vh",
@@ -104,6 +70,41 @@ export default function Home() {
           </button>
         </div>
       </section>
+      {/* CARTES */}
+      <section style={{ padding: "40px" }}>
+     <h2>Espaces populaires</h2>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+      gap: "20px",
+      marginTop: "20px",
+    }}
+  >
+    <EventCard
+      title="Salle de mariage"
+      city="Paris"
+      price={500}
+      image="https://images.unsplash.com/photo-1529634892075-9f7d1e63d4b5"
+    />
+
+    <EventCard
+      title="Loft événementiel"
+      city="Lyon"
+      price={300}
+      image="https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
+    />
+
+    <EventCard
+      title="Jardin extérieur"
+      city="Marseille"
+      price={200}
+      image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+    />
+  </div>
+      </section>
+
     </main>
   );
 }
