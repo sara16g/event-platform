@@ -1,3 +1,4 @@
+import SearchBar from "./components/SearchBar";
 import EventCard from "./components/EventCard";
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
       >
         <h1 style={{ fontSize: "60px", fontWeight: "bold" }}>
           La plateforme événementielle
+          <SearchBar />
         </h1>
+        
 
         <p style={{ fontSize: "20px", marginTop: "10px" }}>
           Louez des espaces et du matériel en quelques clics
