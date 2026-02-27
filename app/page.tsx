@@ -1,19 +1,74 @@
 export default function Home() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>🎉 Plateforme Événementielle</h1>
+    <main>
+      {/* HERO */}
+      <section
+        style={{
+          height: "90vh",
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1519681393784-d120267933ba')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          padding: "60px",
+          color: "white",
+        }}
+      >
+        <h1 style={{ fontSize: "60px", fontWeight: "bold" }}>
+          La plateforme événementielle
+        </h1>
 
-      <p>Bienvenue sur notre plateforme de location d'espaces et de matériel événementiel.</p>
+        <p style={{ fontSize: "20px", marginTop: "10px" }}>
+          Louez des espaces et du matériel en quelques clics
+        </p>
 
-      <div style={{ marginTop: "30px" }}>
-        <button style={{ marginRight: "10px", padding: "10px 20px" }}>
-          Trouver un espace
-        </button>
+        {/* SEARCH BAR */}
+        <div
+          style={{
+            marginTop: "30px",
+            background: "white",
+            padding: "15px",
+            borderRadius: "50px",
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            maxWidth: "700px",
+          }}
+        >
+          <input
+            placeholder="Que cherchez-vous ?"
+            style={{
+              flex: 1,
+              border: "none",
+              outline: "none",
+            }}
+          />
 
-        <button style={{ padding: "10px 20px" }}>
-          Louer mon espace
-        </button>
-      </div>
+          <input
+            placeholder="Ville"
+            style={{
+              flex: 1,
+              border: "none",
+              outline: "none",
+            }}
+          />
+
+          <button
+            style={{
+              background: "#22c55e",
+              border: "none",
+              padding: "10px 20px",
+              borderRadius: "30px",
+              fontWeight: "bold",
+              cursor: "pointer",
+            }}
+          >
+            Rechercher
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
