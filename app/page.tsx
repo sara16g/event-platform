@@ -60,7 +60,7 @@ export default function Home() {
             }}
           />
 
-           { /*<button
+           <button
             style={{
               background: "#22c55e",
               border: "none",
@@ -72,7 +72,7 @@ export default function Home() {
           >
             🔍
           </button> 
-          */ }
+          
         </div>
       </section>
       
