@@ -26,7 +26,7 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "20px",
-        background: "#0f172a",
+        background:"#0f172a",
         color: "white",
       }}
     >
@@ -56,7 +56,7 @@ export default function Header() {
     href="/login"
     style={{
       padding: "8px 15px",
-      background: "#22c55e",
+      background:"#22c55e",
       borderRadius: "20px",
       color: "black",
       fontWeight: "bold",
