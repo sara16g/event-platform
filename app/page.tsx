@@ -6,7 +6,7 @@ export default function Home() {
         style={{
           height: "90vh",
           backgroundImage:
-            "url('/planner event.jpg')",
+            "url('https://images.unsplash.com/photo-1519681393784-d120267933ba')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
