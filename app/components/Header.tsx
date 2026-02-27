@@ -18,7 +18,7 @@
     </header>
   );
 }*/
-export default function Header() {
+  export default function Header() {
   return (
     <header
       style={{
@@ -64,8 +64,8 @@ export default function Header() {
         >
           Je suis un professionnel
         </a>
- 
-         <a
+
+        <a
           href="/login"
           style={{
             padding: "8px 15px",
@@ -78,6 +78,7 @@ export default function Header() {
           Se connecter
         </a>
       </div>
-     </header>
-   );
- }
+    </header>
+  );
+
+}
