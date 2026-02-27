@@ -3,8 +3,9 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
+      
       <section style={{ padding: "40px" }}>
-  <h2>Espaces populaires</h2>
+     <h2>Espaces populaires</h2>
 
   <div
     style={{
