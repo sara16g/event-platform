@@ -27,7 +27,7 @@ export default function Home() {
         <p style={{ fontSize: "20px", marginTop: "10px" }}>
           Louez des espaces et du matériel en quelques clics
         </p>
-          {/*<SearchBar />*/}
+          <SearchBar />
 
         {/* SEARCH BAR */}
         <div
