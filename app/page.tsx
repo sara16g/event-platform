@@ -5,30 +5,55 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section
-        style={{
-          height: "90vh",
-          backgroundImage:
-            "url('/event.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "60px",
-          color: "white",
-        }}
-      >
-        <h1 style={{ fontSize: "60px", fontWeight: "bold" }}>
-          La plateforme événementielle
-        </h1>
-        
+  style={{
+    height: "90vh",
+    position: "relative",
+    backgroundImage: "url('/event.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "60px",
+    color: "white",
+  }}
+>
+  {/* OVERLAY */}
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      background: "rgba(0,0,0,0.4)",
+      zIndex: 1,
+    }}
+  />
 
-        <p style={{ fontSize: "20px", marginTop: "10px" }}>
-          Louez des espaces et du matériel en quelques clics
-        </p>
-          <SearchBar />
-      </section>
+  {/* CONTENU */}
+  <div
+    style={{
+      position: "relative",
+      zIndex: 2,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      textAlign: "center",
+      gap: "20px",
+    }}
+  >
+    <h1 style={{ fontSize: "60px", fontWeight: "bold" }}>
+      La plateforme événementielle
+    </h1>
+
+    <p style={{ fontSize: "20px" }}>
+      Louez des espaces et du matériel en quelques clics
+    </p>
+
+    <SearchBar />
+  </div>
+</section>
       
       {/* CARTES */}
       <section style={{ padding: "40px" }}>
