@@ -28,9 +28,6 @@ export default function Home() {
           Louez des espaces et du matériel en quelques clics
         </p>
           <SearchBar />
-
-        {/* SEARCH BAR */}
-        
       </section>
       
       {/* CARTES */}

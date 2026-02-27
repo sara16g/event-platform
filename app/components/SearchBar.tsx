@@ -6,6 +6,7 @@ export default function SearchBar() {
         alignItems: "center",
         justifyContent: "space-between",
         background: "white",
+        color: "black",
         borderRadius: "50px",
         padding: "15px 20px",
         width: "100%",
@@ -13,7 +14,7 @@ export default function SearchBar() {
         marginTop: "20px",
         boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
         gap: "20px",
-        color: "black",
+
       }}
     >
       {/* TYPE */}
