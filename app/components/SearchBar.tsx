@@ -2,54 +2,63 @@ export default function SearchBar() {
   return (
     <div
       style={{
-        background: "white",
-        padding: "20px",
-        borderRadius: "50px",
         display: "flex",
-        gap: "20px",
         alignItems: "center",
-        boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+        justifyContent: "space-between",
+        background: "white",
+        borderRadius: "50px",
+        padding: "15px 20px",
+        width: "100%",
         maxWidth: "900px",
-        margin: "auto",
+        marginTop: "20px",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+        gap: "20px",
       }}
     >
       {/* TYPE */}
-      <div>
-        <p style={{ fontSize: "12px", color: "gray" }}>Vous souhaitez</p>
-        <select>
-          <option>Réserver un lieu</option>
+      <div style={{ flex: 1 }}>
+        <p style={{ fontSize: "12px", margin: 0 }}>Vous souhaitez</p>
+        <select style={{ border: "none", fontSize: "14px" }}>
+          <option>Réserver une activité</option>
+          <option>Louer une salle</option>
           <option>Louer du matériel</option>
         </select>
       </div>
 
-      {/* VILLE */}
-      <div>
-        <p style={{ fontSize: "12px", color: "gray" }}>Localisation</p>
-        <input placeholder="Paris, Lyon..." />
+      {/* LOCALISATION */}
+      <div style={{ flex: 1 }}>
+        <p style={{ fontSize: "12px", margin: 0 }}>Localisation</p>
+        <input
+          type="text"
+          placeholder="Où recherchez-vous ?"
+          style={{ border: "none", fontSize: "14px", width: "100%" }}
+        />
       </div>
 
-      {/* TYPE EVENT */}
-      <div>
-        <p style={{ fontSize: "12px", color: "gray" }}>Type</p>
-        <select>
-          <option>Mariage</option>
-          <option>Anniversaire</option>
-          <option>Entreprise</option>
+      {/* SPORT / TYPE */}
+      <div style={{ flex: 1 }}>
+        <p style={{ fontSize: "12px", margin: 0 }}>Type</p>
+        <select style={{ border: "none", fontSize: "14px" }}>
+          <option>Tous</option>
+          <option>Événement</option>
+          <option>Matériel</option>
         </select>
       </div>
 
-      {/* BUTTON */}
+      {/* BOUTON */}
       <button
         style={{
           background: "#22c55e",
           color: "white",
-          padding: "15px 25px",
-          borderRadius: "30px",
           border: "none",
+          borderRadius: "50%",
+          width: "50px",
+          height: "50px",
           cursor: "pointer",
+          fontSize: "18px",
         }}
       >
-        🔍 Rechercher
+        🔍
       </button>
     </div>
   );

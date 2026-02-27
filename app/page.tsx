@@ -14,6 +14,7 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          alignItems: "center",
           padding: "60px",
           color: "white",
         }}
@@ -73,6 +74,7 @@ export default function Home() {
           </button>
         </div>
       </section>
+      
       {/* CARTES */}
       <section style={{ padding: "40px" }}>
      <h2>Espaces populaires</h2>
