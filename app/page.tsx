@@ -60,18 +60,7 @@ export default function Home() {
             }}
           />
 
-           <button
-            style={{
-              background: "#22c55e",
-              border: "none",
-              padding: "10px 20px",
-              borderRadius: "30px",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-          >
-            🔍
-          </button> 
+
         </div>
       </section>
       
