@@ -40,7 +40,7 @@ export default function Home() {
         style={{
           height: "90vh",
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1519681393784-d120267933ba')",
+            "url('/plannet-event.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
